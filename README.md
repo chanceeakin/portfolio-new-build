@@ -46,3 +46,15 @@ bower install
 ```
 
 Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+
+
+
+
+### MY CHUNK OF THE README
+
+So, things to work on:
+
+- add motionui
+- sticky footer
+- portfolio
+- settle on a damn theme and some pictures

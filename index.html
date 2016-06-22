@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Chance Eakin</title>
     <!-- Foundation CSS -->
     <link rel="stylesheet" href="css/app.css">
     <!-- Fonts -->
@@ -15,15 +15,25 @@
 </head>
 
 <body>
-    <ul class="menu">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-    </ul>
-    <div class="expanded row landing-page">
-        <div class="large-12 columns fuzz">
+    <div id="menu-wrapper" class="fixed">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="home" class="expanded row landing-page">
+        <div class="large-12 columns fuzz ">
             <h1 class="text-center jumbotron">Chance Eakin</h1>
+            <a id="jumbotron-click" class='icon-div'>
+                <img class="landing-icon" src="img/Icons/on-and-off-button.png">
+            </a>
+        </div>
+    </div>
+    <div id="about" class="expanded row filler-one">
+        <div class="large-12 medium-12 columns">
+            <h3 class="text-center">Bringing ideas to life.</h3>
         </div>
     </div>
     <div class="expanded row about-section">
@@ -43,16 +53,19 @@
             </div>
         </div>
     </div>
-    <div class="expanded row filler">
+    <div class="expanded row filler-two">
         <div class="large-12 medium-12 columns">
         </div>
     </div>
-    <div class="expanded row portfolio">
+    <div id="portfolio" class="expanded row portfolio">
     </div>
+    <footer id="contact">
+    </footer>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/personalstyle.js"></script>
 </body>
 
 </html>
