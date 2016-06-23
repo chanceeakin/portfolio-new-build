@@ -18,14 +18,18 @@ body {
     width: 100%;
 }
 
-
 .menu {
-    background-color: rgba(255,255,255,0.6);
+    background-color: #00A896;
     padding: 10px;
 }
 
 .menu>li>a {
     color: black;
+    text-decoration: none;
+}
+
+.menu>li>a:hover {
+    color: white;
     text-decoration: none;
 }
 
@@ -37,7 +41,7 @@ body {
 
 .fuzz {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -65,6 +69,10 @@ h1 {}
     padding-left: 0px;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 .columns {
     padding-left: 0px;
     padding-right: 0px;
@@ -74,6 +82,11 @@ h1 {}
     height: 25vh;
     color: black;
     background-color: white;
+}
+
+.filler-one h3 {
+    line-height: 25vh;
+    font-size: 60px;
 }
 
 .about-section {
@@ -88,36 +101,64 @@ h1 {}
 .about-left {
     padding: 5vh 5vh 5vh 5vh;
     height: 40vh;
-    background-color: #3F5E5A;
+    background-color: #02C39A;
+    margin: 0px 20px 0px 20px;
 }
 
 .about-center {
     padding: 5vh 5vh 5vh 5vh;
     height: 40vh;
-    background-color: #011627;
+    background-color: #05668D;
+    margin: 0px 20px 0px 20px;
 }
 
 .about-right {
     padding: 5vh 5vh 5vh 5vh;
     height: 40vh;
-    background-color: #DD1C1A;
+    background-color: #028090;
+    margin: 0px 20px 0px 20px;
 }
 
 .filler-two {
-    background: url('../img/beachsunrise.jpg') no-repeat;
     background-size: 100%;
     height: 35vh;
 }
 
 .portfolio {
-    background-color: #171219;
+    background-color: #028090;
     height: 100vh;
+    color: black;
+    line-height: 25vh;
 }
 
+.tech-stack {
+    height: 70vh;
+    background-color: #F0F3BD;
+    color: black;
+}
+
+
+
+/* FOOTER INFORMATION */
 footer {
     height: 30vh;
-    background-color: white;
+    color: black;
+    background-color: #00A896;
 }
 
+footer h4 {
+    padding-top: 20px;
+    font-size: 30px;
+}
 
+footer>ul>li {
+    display: inline-block;
+}
 
+.footer-a-color{
+    color: black;
+}
+
+.footer-a-color:hover {
+    color: white;
+}

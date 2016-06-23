@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/app.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <!-- Personal Style Sheet -->
     <link rel="stylesheet" href="css/personalstyle.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -20,20 +22,20 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#tech-stack">Technologies</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
     <div id="home" class="expanded row landing-page">
-        <div class="large-12 columns fuzz ">
-            <h1 class="text-center jumbotron">Chance Eakin</h1>
+        <div class="large-12 columns fuzz">
+            <h1 class="animated fadeInDownBig text-center jumbotron">Chance Eakin</h1>
             <a id="jumbotron-click" class='icon-div'>
-                <img class="landing-icon" src="img/Icons/on-and-off-button.png">
+                <img class="landing-icon animated fadeInUpBig" src="img/Icons/on-and-off-button.png">
             </a>
         </div>
     </div>
-
     <!--  HOW TO USE FOUNDATION'S MOTION UI -->
-  <!--   <p><a data-toggle="reveal_modal">Click here to open modal</a></p>
+    <!--   <p><a data-toggle="reveal_modal">Click here to open modal</a></p>
    <div class="reveal" id="reveal_modal" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
       <h2>This is Animations Modal</h2>
       <p>Foundation is semantic, readable, flexible, and completely customizable.</p>
@@ -41,37 +43,60 @@
             <span aria-hidden="true">×</span>
          </button>
    </div> -->
-    <div id="about" class="expanded row filler-one">
+    <div id="about" class="row filler-one">
         <div class="large-12 medium-12 columns">
-            <h3 class="text-center">Bringing ideas to life.</h3>
+            <h3 id="about-title" class="text-center animated hidden">Bringing ideas to life.</h3>
         </div>
     </div>
-    <div class="expanded row about-section">
-        <div class="large-4 columns">
+    <div class="expanded row about-section animation-element">
+        <div id="about-left" class="large-4 columns animated hidden">
             <div class="about-left text-center">
                 <p>Computer, lights up! Smooth as an android's bottom, eh, Data? When has justice ever been as simple as a rule book? Sorry, Data. Travel time to the nearest starbase? About four years. I got tired of hearing how young I looked. For an android with no feelings, he sure managed to evoke them in others. Talk about going nowhere fast. This should be interesting. I can't. As much as I care about you, my first duty is to the ship.</p>
             </div>
         </div>
-        <div class="large-4 columns">
+        <div id="about-center" class="large-4 columns animated hidden">
             <div class="about-center text-center">
                 <p>Computer, lights up! Smooth as an android's bottom, eh, Data? When has justice ever been as simple as a rule book? Sorry, Data. Travel time to the nearest starbase? About four years. I got tired of hearing how young I looked. For an android with no feelings, he sure managed to evoke them in others. Talk about going nowhere fast. This should be interesting. I can't. As much as I care about you, my first duty is to the ship.</p>
             </div>
         </div>
-        <div class="large-4 columns">
+        <div id="about-right" class="large-4 columns animated hidden end">
             <div class="about-right text-center">
                 <p>Computer, lights up! Smooth as an android's bottom, eh, Data? When has justice ever been as simple as a rule book? Sorry, Data. Travel time to the nearest starbase? About four years. I got tired of hearing how young I looked. For an android with no feelings, he sure managed to evoke them in others. Talk about going nowhere fast. This should be interesting. I can't. As much as I care about you, my first duty is to the ship.</p>
             </div>
         </div>
     </div>
-    <div class="expanded row filler-two">
+    <div class="row filler-two">
         <div class="large-12 medium-12 columns">
         </div>
     </div>
     <div id="portfolio" class="expanded row portfolio">
+        <h2 class='text-center'>Recent Work</h2>
     </div>
+    <section id="tech-stack" class="expanded row tech-stack">
+        <h3 class="text-center">Technologies I know</h3>
+    </section>
     <footer id="contact">
+        <h4 class="text-center">Chance Eakin</h4>
+        <ul class='text-center'>
+            <li><i class="fa fa-envelope-o fa-fw footer-a-color"></i> <a href="mailto:chance.eakin@gmail.com" class="footer-a-color">chance.eakin@gmail.com</a>
+            </li>
+        </ul>
+        <br>
+        <ul class="text-center">
+            <li>
+                <a href="https://www.github.com/chanceeakin"><i class="fa fa-github fa-fw fa-3x footer-a-color"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/chanceeakin"><i class="fa fa-linkedin fa-fw fa-3x footer-a-color"></i></a>
+            </li>
+            <li>
+                <a href="http://stackoverflow.com/users/6016389/chance-eakin"><i class="fa fa-stack-overflow fa-fw fa-3x footer-a-color"></i></a>
+            </li>
+        </ul>
+        <p class="text-center">Copyright &copy; Chance Eakin 2016</p>
     </footer>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/app.js"></script>
