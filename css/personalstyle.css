@@ -40,15 +40,14 @@ body {
 }
 
 .fuzz {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
     z-index: 1;
 }
 
 .jumbotron {
-    font-size: 12em;
-    color: white;
     padding-top: 30vh;
+    font-size: 12em;
+    color: #333;
 }
 
 .icon-div {
@@ -81,7 +80,6 @@ h1 {}
 .filler-one {
     height: 25vh;
     color: black;
-    background-color: white;
 }
 
 .filler-one h3 {
@@ -124,22 +122,55 @@ h1 {}
     height: 35vh;
 }
 
+
+/* PORTFOLIO CSS*/
+
 .portfolio {
     background-color: #028090;
-    height: 100vh;
-    color: black;
-    line-height: 25vh;
+    min-height: 100vh;
+    color: white;
+}
+
+.portfolio-title {
+    font-size: 60px;
+    padding: 30px;
+    padding-top: 10vh;
+}
+
+.portfolio-item {
+    background-color: #F0F3BD;
+    min-height: 25vh;
+    margin: 30px;
+}
+
+
+/* TECH SECTION CSS*/
+
+.tech-title {
+    padding: 20px;
+    padding-top: 10vh;
+    font-size: 60px;
+}
+
+.tech-holder {
+    padding-bottom: 30px;
 }
 
 .tech-stack {
-    height: 70vh;
     background-color: #F0F3BD;
     color: black;
 }
 
+.tech-image {
+    display: block;
+    margin: auto;
+    max-width: 25vh;
+    padding: 30px;
+}
 
 
 /* FOOTER INFORMATION */
+
 footer {
     height: 30vh;
     color: black;
@@ -148,14 +179,14 @@ footer {
 
 footer h4 {
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 footer>ul>li {
     display: inline-block;
 }
 
-.footer-a-color{
+.footer-a-color {
     color: black;
 }
 
