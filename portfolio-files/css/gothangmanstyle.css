@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+html {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url("../fonts/Minecraft.ttf") format("truetype");
+}
+
+body {
+    font-family: "My Custom Font", Sans-serif;
+    background-image: url("../img/blackstarkwolf.jpg");
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 20px 25px 20px;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+header h2 {
+    font-size: 30px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    min-height: 100%;
+    margin: 0 auto -170px;
+}
+
+.game-title {
+    text-align: center;
+    border: 2px solid gray;
+    margin-top: 30px;
+    background-color: #fff;
+    padding-bottom: 200px;
+}
+
+.game-title h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+
+
+#game li {
+    display: inline;
+    font-size: 40px;
+}
+
+
+
+#info-space {
+    height: 100%;
+    padding: auto;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid gray;
+}
+
+#info-space p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+footer, .push {
+    height: 170px; /* '.push' must be the same height as 'footer' */
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}

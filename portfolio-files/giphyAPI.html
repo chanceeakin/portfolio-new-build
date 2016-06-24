@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dank Meme Generator</title>
+    <!-- Latest compiled and minified BS3.3.6  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Muli Font -->
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel=stylesheet href="css/giphyAPI.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Dank Meme Generator</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="../index.html">Back to Portfolio</a></li>
+			</ul>
+			<form id="newMeme" class="navbar-form navbar-right" role="query">
+				<div class="form-group">
+					<input type="text" id="memeInput" class="form-control" placeholder="Add your own button!" value="">
+				</div>
+				<button type="submit" class="btn btn-default submit-button">Submit</button>
+			</form>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+<!-- body -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1>For the night is dank, and full of memes</h1>
+            </div>
+            <!-- Holds buttons -->
+            <div class="col-md-12 button text-center" id="button-holder"></div>
+        </div>
+        <!-- Where the gifs are populated after AJAX calls -->
+        <div class="row">
+            <div class="gif-zone"></div>
+        </div>
+        <div class="push"></div>
+    </div>
+    <footer>
+    	<h4 class="footer-text text-center">Crafted with 50% care and 50% panic by Chance Eakin in 2016</h4>
+    </footer>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/giphyAPI.js"></script>
+</body>
+
+</html>

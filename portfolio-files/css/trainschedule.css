@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-default {
+    background-color: #9CEC5B;
+    color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: #333;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #777;
+}
+
+.header {
+    background-color: #533A71;
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+table {
+    color: white;
+    background-color: #6184D8;
+    border-radius: 5px;
+}
+
+form {
+    color: white;
+    background-color: #50C5B7;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group label {
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.form-group input {
+    margin: 0px 5px 0px 5px;
+    min-width: 90%;
+    max-width: 99%;
+    box-sizing: border-box;
+}
+
+form .btn-default {
+    background-color: #9CEC5B;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+form .btn-default:hover {
+    background-color: #F0F465;
+}

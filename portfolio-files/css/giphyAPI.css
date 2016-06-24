@@ -1,0 +1,88 @@
+* {
+	margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+.container-fluid {
+	min-height: 100%;
+	margin: 0 auto -100px;
+}
+
+body {
+    background-image: url('../img/asanoha-400px.png');
+    font-family: 'Muli', sans-serif;
+}
+/*Minimal Navbar CSS*/
+.navbar-default {
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 50px;
+    margin: 20px 20px 40px 20px;
+}
+/*AJAX call buttons. The gif populating buttons*/
+.dankMemeButtons {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 0px;
+    background-color: aquamarine;
+    border: none;
+}
+
+.dankMemeButtons:hover, .dankMemeButtons:focus {
+    background-color: mediumaquamarine;
+
+}
+
+.dankMemeButtons:active {
+	    background-color: violet;
+
+}
+
+
+/*Picture Formatting*/
+.gif-zone {
+    width: 100%;
+    min-height: 50vh;
+}
+
+.gif-image {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.gif-rating {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: auto;
+    padding-right: auto;
+    align: center;
+    width: 100%;
+    bottom: -20px;
+    color: black;
+}
+
+/*Footer information!*/
+footer, .push {
+	height: 100px;
+}
+
+footer {
+	background-color: aquamarine;
+}
+
+.footer-text {
+	height: 75px;
+	line-height: 75px;
+}

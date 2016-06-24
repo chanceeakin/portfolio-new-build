@@ -54,7 +54,20 @@ Finally, run `npm start` to run the Sass compiler. It will re-run every time you
 
 So, things to work on:
 
-- add motionui
-- sticky footer
-- portfolio
-- settle on a damn theme and some pictures
+- link portfolio files into the main dump page
+
+-hangman
+-rpg
+-trivia
+-giphyapi
+-trainschedule
+
+
+- add modals to each portfolio page that discusses my journey.
+- build out the media responsiveness for these pages.
+
+
+Let's clean up Nightlyfe while I'm at it.
+	-nightlyfe? we need to clean that shit up.
+	-MAKE THE UI FUNCTIONAL AND SEXY.
+

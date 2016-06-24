@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule!</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/trainschedule.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Train Schedule</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Portfolio</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+    <div class="container">
+        <div class="header text-center">
+            <h1>Train Schedule</h1>
+            <h3>All times local</h3>
+            <div id="currentTime"></div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <h3>Trains</h3></tr>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>First Train Time</th>
+                    <th>Frequency (in minutes)</th>
+                    <th>Next train arrives:</th>
+                    <th>Time until next Train</th>
+                </tr>
+            </thead>
+            <tbody class="trainSchedule">
+            </tbody>
+        </table>
+        <!-- FORM! -->
+        <h3>Input new trains here</h3>
+        <form id="newTrainData">
+            <div class="form-group">
+                <label for="trainName">Train Name</label>
+                <input type="name" class="form-control" id="trainName" placeholder="Example: Choo choo!">
+            </div>
+            <div class="form-group">
+                <label for="trainDestination">Destination</label>
+                <input type="text" class="form-control" id="trainDestination" placeholder="Example: Prague">
+            </div>
+            <div class="form-group">
+                <label for="startTime">First Run Time</label>
+                <input type="text" class="form-control" id="trainStartTime" placeholder="Example: 3:00am">
+            </div>
+            <div class="form-group">
+                <label for="trainFrequency">Frequency (in Minutes)</label>
+                <input type="text" class="form-control" id="trainFrequency" placeholder="Example: 17 Minutes">
+            </div>
+            <button type="submit" id="addTrain" class="btn btn-default">Submit</button>
+            <button type="reset" id="resetButton" class="btn btn-default">Reset</button>
+        </form>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- trainschedule.js -->
+    <script src="js/trainschedule.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

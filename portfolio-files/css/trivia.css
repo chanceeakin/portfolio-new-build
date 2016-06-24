@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body,
+html {
+    height: 100%;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/bgpattern80s.jpg");
+    color: #000;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: transparent;
+}
+
+/* Navbar styling */
+.navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-default {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+
+
+.game-space {
+    min-height: 80vh;
+}
+
+button {
+    border-radius: 0px;
+    background-color: fuchsia;
+    border: solid 2px grey;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    font-size: 1.5vw;
+    margin: auto;
+}
+
+#start {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+button:active {
+    border-radius: 0px;
+    background-color: cornflowerblue;
+    border: solid 2px grey;
+    color: grey;
+}
+
+.game-title {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.game-title h1 {
+    font-size: 80px;
+    color: #000;
+}
+
+.question-space {
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 50vh;
+}
+
+
+/* the bottom timer */
+.time-remaining-container, .master-timer-container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.time-remaining, .master-timer {
+    font-size: 40px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+
+/* dynamically generated content */
+.game-question {
+    font-size: 50px;
+    color: #000;
+}
+
+.game-results-title {
+    font-size: 60px;
+}
+
+.game-results {
+    font-size: 40px;
+    color: black;
+}
+
+.game-button {
+    display: block;
+    padding: 15px 200px 15px 200px;
+    margin-bottom: 10px;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.restart-holder {
+    text-align: center;
+}
+
+#restart {
+    margin: 10px 0px 10px;
+    font-size: 40px;
+}
+
+

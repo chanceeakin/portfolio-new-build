@@ -1,0 +1,105 @@
+[{
+        "question": "What's the title of this song?",
+        "correct": "Purple Rain",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/predit.ogg"
+    },
+
+    {
+        "question": "Who wrote this song?",
+        "correct": "Don't Stop Believing",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/journeyedit.ogg"
+    },
+
+    {
+
+        "question": "What's the title of this song?",
+        "correct": "Panama",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/panamaedit.ogg"
+    },
+
+
+    {
+
+        "question": "Who wrote this song?",
+        "correct": "Madness - Our House",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/ourhouseedit.ogg"
+
+    },
+
+    {
+
+        "question": "What's the title of this song?",
+        "correct": "Another One bites the dust",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/aobtdedit.ogg"
+
+    },
+
+    {
+
+        "question": "Who wrote this song?",
+        "correct": "Africa",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/africaedit.ogg"
+    },
+
+
+    {
+
+        "question": "What's the title of this song?",
+        "correct": "Mr. Mister - Broken Wings",
+        "incorrect1": "",
+        "incorrect2": "",
+        "incorrect3": "",
+        "src": "audio/brokenwingsedit.ogg"
+
+    },
+
+    {
+
+        "question": "Who wrote this song?",
+        "correct": "You give love a bad name",
+        "incorrect1": "fake",
+        "incorrect2": "fake",
+        "incorrect3": "fake",
+        "src": "audio/bonjoviedit.ogg"
+
+    },
+
+    {
+
+        "question": "What's the title of this song?",
+        "correct": "Faith - George Michael",
+        "incorrect1": "fake",
+        "incorrect2": "fake",
+        "incorrect3": "fake",
+        "src": "audio/faithedit.ogg"
+
+    },
+
+    {
+
+        "question": "Who wrote this song?",
+        "correct": "Welcome to the Jungle",
+        "incorrect1": "fake",
+        "incorrect2": "fake",
+        "incorrect3": "fake",
+        "src": "audio/jungleedit.ogg"
+    }
+]
