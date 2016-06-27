@@ -53,21 +53,13 @@ Finally, run `npm start` to run the Sass compiler. It will re-run every time you
 ### MY CHUNK OF THE README
 
 So, things to work on:
-
-- link portfolio files into the main dump page
-
--hangman
--rpg
--trivia
--giphyapi
--trainschedule
+-add your personal information and headshot to the damned page already.
+-media queries and responsive design for the landing page.
+-clean up the power button sizing
+-add spacing between sections?
 
 
-- add modals to each portfolio page that discusses my journey.
+
 - build out the media responsiveness for these pages.
-
-
-Let's clean up Nightlyfe while I'm at it.
-	-nightlyfe? we need to clean that shit up.
-	-MAKE THE UI FUNCTIONAL AND SEXY.
+- refactor individual portfolio items and show the difference between the old and the new.
 

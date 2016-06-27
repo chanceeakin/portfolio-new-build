@@ -46,10 +46,30 @@
     <footer>
         <h3>Made in 2016 by Chance Eakin with lots of stuff borrowed from the Interwebs</h3>
         <a class="btn" href="../index.html">Return to Portfolio</a>
+        <a class="btn" data-toggle="modal" data-target="#myModal">About This Project</a>
     </footer>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Game of Thrones Hangman</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This Hangman game was my first foray into Vanilla JS. It uses around 100 lines of code. It's pretty well written, though I could probably refactor it.</p><p>It's presented here in its original form. I went with an 8-bit, black and white theme: chunky and nostalgic.</p><p>Date: 5/7/2016</p>
+                </div> 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Javascripts! -->
+    <!-- BootStrap.js -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Game StyleSheet -->
     <script src="js/gothangmangame.js" type="text/javascript"></script>
-    
 </body>
 
 </html>

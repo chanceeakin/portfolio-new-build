@@ -1,3 +1,4 @@
+/* GLOBAL PAGE CSS*/
 * {
     margin: 0 auto;
     box-sizing: border-box;
@@ -12,7 +13,6 @@ body {
 
 
 /* MENU CSS  ////////////////////////////////*/
-
 #menu-wrapper.fixed {
     position: fixed;
     top: 0;
@@ -31,11 +31,17 @@ body {
     text-decoration: none;
 }
 
+.menu ul{
+    padding-left: 50px;
+}
+
 .menu>li>a:hover {
     color: white;
     text-decoration: none;
 }
 
+
+/* LANDING SECTION */
 .landing-page {
     height: 100vh;
     background: url('../img/mountainsunrise.jpg') no-repeat;
@@ -49,7 +55,7 @@ body {
 
 .jumbotron {
     padding-top: 25vh;
-    font-size: 15vw;
+    font-size: 11vw;
     color: #333;
 }
 

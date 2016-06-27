@@ -31,10 +31,29 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="../index.html">Portfolio</a></li>
+                <li><a data-toggle="modal" data-target="#myModal">About This Project</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div>
 </nav>
+<!-- DESCRIPTION MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Train Schedule: A Firebase Usage App</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a proof of concept for utilizing Google Firebase, the ready-made server technology, as well as using Moment.js for time and date parsing. Simple, effective design that works in a basic way.</p><p>As I am presenting most of these demos as-is, if this was a project completed to full satisfaction, I'd add a way to delete trains--as well as some form validation.</p><p>Date: 6/11/2016</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BODY -->
     <div class="container">
         <div class="header text-center">
             <h1>Train Schedule</h1>

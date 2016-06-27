@@ -28,13 +28,32 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="../index.html">Back to Portfolio</a></li>
+                        <li><a data-toggle="modal" data-target="#myModal">About This Project</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
         </nav>
     </header>
-    <!-- /header -->
+<!-- /header -->
+<!-- DESCRIPTION MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">80's jQuery Music Trivia</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Using jQuery and timer events like setInterval, I built a multimedia trivia game based on 80s music. It's fun, and it works. In a future iteration of this portfolio, I will have each portfolio item in both original and refactored conditions.</p><p>Date: 5/21/2016</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BODY -->
     <section>
         <div class="container-fluid">
             <!-- Container for game -->
@@ -61,8 +80,7 @@
             </div>
         </div>
     </section>
-    <footer>
-    </footer>
+
     <!-- jQuery and Boostrap Script CDNs -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
