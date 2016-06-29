@@ -35,6 +35,14 @@ a {
     font-size: 2rem;
 }
 
+.top-bar-title>a{
+ color: white;
+}
+
+.top-bar-title>a:hover {
+    color: white;
+}
+
 
 .top-bar ul>li>a {
     color: black;
