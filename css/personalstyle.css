@@ -1,4 +1,4 @@
-/* GLOBAL PAGE CSS*/
+    /* GLOBAL PAGE CSS*/
 
 * {
     margin: 0 auto;
@@ -12,10 +12,14 @@ body {
     color: white;
 }
 
+a {
+    color: black;
+}
+
 
 /* MENU CSS  ////////////////////////////////*/
 
-#menu-wrapper.fixed {
+#menu-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,25 +27,28 @@ body {
     width: 100%;
 }
 
-.menu {
+.menu, .top-bar, .top-bar ul{
     background-color: #00A896;
-    padding: 10px;
 }
 
-.menu>li>a {
+.top-bar-title {
+    font-size: 2rem;
+}
+
+
+.top-bar ul>li>a {
     color: black;
     text-decoration: none;
 }
 
-.menu ul {
-    padding-left: 50px;
+.menu>li>a {
+    padding: 1rem;
 }
 
 .menu>li>a:hover {
     color: white;
     text-decoration: none;
 }
-
 
 /* LANDING SECTION */
 
@@ -117,20 +124,20 @@ h1 {}
 
 .about-left {
     padding: 5vh 5vh 5vh 5vh;
-    height: 65vh;
     background-color: #02C39A;
     margin: 0px 20px 0px 20px;
 }
 
 .about-right {
     padding: 5vh 5vh 5vh 5vh;
-    height: 65vh;
     background-color: #05668D;
     margin: 0px 20px 0px 20px;
 }
 
 .about-image {
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
 }
 
 .filler-two {
@@ -146,7 +153,6 @@ h1 {}
 
 .portfolio {
     background-color: #028090;
-    min-height: 100vh;
     color: white;
 }
 
@@ -240,26 +246,31 @@ footer>ul>li {
     color: white;
 }
 
-
 // Small screens
-@media only screen { } /* Define mobile styles */
+@media only screen {}
 
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
-// Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+/* Define mobile styles */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (max-width: 40em) {
+    .landing-page {
+        background: #fff;
+    }
+    .landing-icon {
+        min-width: 50px;
+        max-width: 128px;
+    }
+}
 
-// Large screens
-@media only screen and (min-width: 64.063em) { }  min-width 1025px, large screens 
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
-// XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-// XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .landing-page {
+        background: #fff;
+    }
+    .landing-icon {
+        min-width: 50px;
+        max-width: 128px;
+    }
+    /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
