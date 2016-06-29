@@ -1,4 +1,5 @@
 /* GLOBAL PAGE CSS*/
+
 * {
     margin: 0 auto;
     box-sizing: border-box;
@@ -13,6 +14,7 @@ body {
 
 
 /* MENU CSS  ////////////////////////////////*/
+
 #menu-wrapper.fixed {
     position: fixed;
     top: 0;
@@ -31,7 +33,7 @@ body {
     text-decoration: none;
 }
 
-.menu ul{
+.menu ul {
     padding-left: 50px;
 }
 
@@ -42,10 +44,12 @@ body {
 
 
 /* LANDING SECTION */
+
 .landing-page {
     height: 100vh;
     background: url('../img/mountainsunrise.jpg') no-repeat;
     background-size: 100%;
+    margin-bottom: 25px;
 }
 
 .fuzz {
@@ -63,8 +67,14 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100px;
+    min-width: 100px;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.0);
     height: auto;
+}
+
+.landing-icon:hover {
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 h1 {}
@@ -92,7 +102,7 @@ h1 {}
 }
 
 .filler-one h3 {
-    line-height: 35vh;
+    line-height: 30vh;
     font-size: 60px;
 }
 
@@ -107,23 +117,20 @@ h1 {}
 
 .about-left {
     padding: 5vh 5vh 5vh 5vh;
-    height: 50vh;
+    height: 65vh;
     background-color: #02C39A;
-    margin: 0px 20px 0px 20px;
-}
-
-.about-center {
-    padding: 5vh 5vh 5vh 5vh;
-    height: 50vh;
-    background-color: #05668D;
     margin: 0px 20px 0px 20px;
 }
 
 .about-right {
     padding: 5vh 5vh 5vh 5vh;
-    height: 50vh;
-    background-color: #028090;
+    height: 65vh;
+    background-color: #05668D;
     margin: 0px 20px 0px 20px;
+}
+
+.about-image {
+    height: 100%;
 }
 
 .filler-two {
@@ -150,7 +157,7 @@ h1 {}
 
 .portfolio-item {
     min-height: 25vh;
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 60px 30px;
     align-content: middle;
     position: relative;
 }
@@ -195,6 +202,8 @@ h1 {}
 .tech-stack {
     background-color: #F0F3BD;
     color: black;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 .tech-image {
@@ -230,3 +239,27 @@ footer>ul>li {
 .footer-a-color:hover {
     color: white;
 }
+
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { }  min-width 1025px, large screens 
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
