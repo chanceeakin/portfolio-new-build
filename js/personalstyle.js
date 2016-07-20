@@ -85,4 +85,35 @@ $(document).ready(function() {
         $("#node-img").customAnimate('bounceIn', '70%');
         $('#npm-img').customAnimate('bounceIn', "60%");
     }
+    if ($(window).width() <= 639) {
+        $('#about-title').customAnimate('fadeIn', '70%');
+        $('#about-left').customAnimate('fadeIn', '70%');
+        $("#about-right").customAnimate('fadeIn', '70%');
+        /////// portfolio animations ///////
+        $('#portfolio-title').customAnimate('fadeIn', '70%');
+        $('#portfolio-one').customAnimate('fadeIn', '70%');
+        $('#portfolio-two').customAnimate('fadeIn', '70%');
+        $('#portfolio-three').customAnimate('fadeIn', '70%');
+        $('#portfolio-four').customAnimate('fadeIn', '70%');
+        $('#portfolio-five').customAnimate('fadeIn', '70%');
+        $('#portfolio-six').customAnimate('fadeIn', '70%');
+        //////// TECH BOUNCE INS ///////////////////
+        $('#tech-title').customAnimate('fadeIn', '70%');
+        //row 1
+        $('#html-img').customAnimate('bounceIn', '70%');
+        $('#css-img').customAnimate('bounceIn', '70%');
+        $('#js-img').customAnimate('bounceIn', '70%');
+        // row 2
+        $('#jquery-img').customAnimate('bounceIn', '70%');
+        $('#bs-img').customAnimate('bounceIn', '70%');
+        $('#foundation-img').customAnimate('bounceIn', '70%');
+        // row 3
+        $('#bower-img').customAnimate('bounceIn', '70%');
+        $('#git-img').customAnimate('bounceIn', '70%');
+        $('#github-img').customAnimate('bounceIn', '70%');
+        //row 4
+        $('#react-img').customAnimate('bounceIn', '70%');
+        $("#node-img").customAnimate('bounceIn', '70%');
+        $('#npm-img').customAnimate('bounceIn', "70%");
+    }
 });
