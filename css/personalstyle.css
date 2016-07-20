@@ -134,14 +134,15 @@ h1 {}
 .about-left {
     padding: 40px;
     background-color: #02C39A;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px;
     min-height: 500px;
+    max-height: 900px;
 }
 
 .about-right {
-    padding: 5vh 5vh 5vh 5vh;
+    padding: 20px 30px 20px 30px;
     background-color: #05668D;
-    margin: 0px 20px 0px 20px;
+    margin: 0;
     min-height: 500px;
     font-weight: 500;
     letter-spacing: .11em;
@@ -225,12 +226,60 @@ h1 {}
     margin-bottom: 20vh;
 }
 
+.tech {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
 .tech-image {
     display: block;
     margin: auto;
-    max-width: 25vh;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 20vh;
     padding-top: 30px;
     padding-bottom: 20px;
+}
+
+.tech .tech-words {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    background: #F0F3BD;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+
+
+.tech .tech-words .tech-words-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: .11em;
+}
+
+.tech:hover .tech-words {
+    opacity: 1;
+}
+
+.node {
+    padding-top: 4vh;
 }
 
 
@@ -277,8 +326,18 @@ footer h4 {
     line-height: 30vh;
     font-size: 2em;
     }
+    .about-left {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     .about-right {
         margin-top: 20px;
+    }
+    .menu-icon {
+        padding-right: 10px;
+    }
+    .tech .tech-words {
+        width: 100%;
     }
 }
 
@@ -293,10 +352,21 @@ footer h4 {
         min-width: 50px;
         max-width: 128px;
     }
+    .about-left {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     .about-right {
         margin-top: 20px;
+    }
+    .about-image {
+        max-height: 600px;
     }
     .tech-image {
         max-width: 200px;
     }
+    .menu-icon {
+        padding-right: 10px;
+    }
+    
     /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
