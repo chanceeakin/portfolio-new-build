@@ -1,24 +1,33 @@
 var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')();
+const nodemon = require('gulp-nodemon');
 
 var sassPaths = [
-  'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+	'bower_components/foundation-sites/scss',
+	'bower_components/motion-ui/src'
 ];
 
-gulp.task('sass', function() {
-  return gulp.src('scss/app.scss')
-    .pipe($.sass({
-      includePaths: sassPaths,
-      outputStyle: 'compressed' // if css compressed **file size**
-    })
-      .on('error', $.sass.logError))
-    .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
-    }))
-    .pipe(gulp.dest('public/css'));
+gulp.task('sass', function () {
+	return gulp.src('scss/app.scss')
+		.pipe($.sass({
+			includePaths: sassPaths,
+			outputStyle: 'compressed' // if css compressed **file size**
+		})
+			.on('error', $.sass.logError))
+		.pipe($.autoprefixer({
+			browsers: ['last 2 versions', 'ie >= 9']
+		}))
+		.pipe(gulp.dest('public/css'));
 });
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+gulp.task('default', ['sass'], function () {
+	gulp.watch(['scss/**/*.scss'], ['sass']);
+});
+
+gulp.task('start', function () {
+	nodemon({
+		script: 'server.js',
+		ext: 'js html',
+		env: { 'NODE_ENV': 'development' }
+	});
 });
